@@ -1,0 +1,30 @@
+GreenWiz Backend Assignment
+Overview:
+Write a code which will take website link as an input and download images of that.
+
+Description:
+* While starting the program, supply the website name like https://www.growpital.com
+* Your program should scan for all links available in the page and traverse them as well.
+* For each page scan for available images and download them in a folder.
+* Create a doc,
+o describing the functionality of your program
+o what all features can be added
+
+Constraints:
+* Do not download the same image twice.
+* Do not traverse the same link twice.
+* Only traverse the pages of given domain
+* Only download the images of given domain.
+Approach: 
+For downloading files from website I need axios and cheerios, axios is used for making asynchronous http request and cheerios find elements from text,
+Apart from that as i will be dealing with files so I installed fs (module),
+And the last one is mime-Types(module), It will find all the files type according to my logic/need.
+Solution:                       I divided it in three parts:
+1. I found all url related to images and pushed to an array:
+Using Axios I hit tha url and by using cheerios I filtered Elements from texts, 
+And also implemented uniqueness check.
+
+2. I gave a url as a function Argument, so that it would store all images in a given folder and for naming system I used mime-types, it found the image type and named jpg/jpeg/svg/png e.t.c ? and add as that image Name and have used  Date and time also.
+
+3. I combined both 1st and 2nd and called to traverse full array to get all unique images in a given folder till all works is not done it will not stop.
+
