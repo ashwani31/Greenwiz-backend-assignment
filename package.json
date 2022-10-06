@@ -8,12 +8,12 @@
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.1",
     "mime": "^3.0.0",
-    "mime-types": "^2.1.35"
+    "mime-types": "^2.1.35",
+    "nodemon": "^2.0.20"
   },
   "name": "greenwiz-backend-assignment",
   "version": "1.0.0",
   "main": "Index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uraajrishu/greenwiz-backend-assignment.git"
